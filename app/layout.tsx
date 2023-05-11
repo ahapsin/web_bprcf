@@ -1,5 +1,10 @@
 import { Box } from "./Box";
 import { Content } from "./Content";
+import Card from "./card";
+import Announcement from "./components/announcement";
+import Cta from "./components/cta";
+import Footer from "./components/footer";
+import Testimoni from "./components/testimoni";
 import "./globals.css";
 import { Inter } from "next/font/google";
 
@@ -18,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <Announcement />
         <Box
           css={{
             maxW: "100%",
@@ -26,6 +32,15 @@ export default function RootLayout({
           {children}
           <Content />
         </Box>
+        <div className="flex">
+          <Card />
+          <Card />
+          <Card />
+        </div>
+
+        <Cta />
+        <Testimoni />
+        <Footer />
       </body>
     </html>
   );
