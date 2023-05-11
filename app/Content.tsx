@@ -1,7 +1,7 @@
 "use client";
 import { Text, Spacer } from "@nextui-org/react";
 import { Box } from "./Box";
-
+const text = "Almost before we knew it, we had left the ground.";
 export const Content = () => (
   <Box css={{ px: "$12", mt: "$8", "@xsMax": { px: "$10" } }}>
     <Text h2>Lorem ipsum dolor sit amet</Text>
@@ -13,6 +13,14 @@ export const Content = () => (
       sed risus pretium quam vulputate. Interdum velit euismod in pellentesque
       massa placerat duis ultricies.
     </Text>
+    <>
+      <Text h1>{text}</Text>
+      <Text h2>{text}</Text>
+      <Text h3>{text}</Text>
+      <Text h4>{text}</Text>
+      <Text h5>{text}</Text>
+      <Text h6>{text}</Text>
+    </>
     <Spacer y={1} />
     <Text size="$lg">
       Rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui. Praesent
