@@ -8,6 +8,7 @@ import {
   useTheme,
 } from "@nextui-org/react";
 import { IconAccessibleOffFilled } from "@tabler/icons-react";
+import IconLogo from "./components/icon/IconLogo";
 
 export default function Home() {
   const collapseItems = [
@@ -26,7 +27,9 @@ export default function Home() {
     <Navbar shouldHideOnScroll isBordered={isDark} variant="sticky">
       <Navbar.Brand>
         <Navbar.Toggle aria-label="toggle navigation" showIn={"xs"} />
+
         <Text b color="inherit" hideIn="xs">
+          <IconLogo />
           bprcf
         </Text>
       </Navbar.Brand>
