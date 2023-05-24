@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@icon-park/react": "^1.4.2",
     "@nextui-org/react": "^1.0.0-beta.12",
     "@tabler/icons-react": "^2.18.0",
     "@tryghost/content-api": "^1.11.10",

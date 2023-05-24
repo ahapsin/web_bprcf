@@ -1,5 +1,7 @@
+import VisiMisi from "../components/section/visimisi";
+
 const Dashboard = () => {
-  return <div>echo</div>;
+  return <VisiMisi />;
 };
 
 export default Dashboard;
