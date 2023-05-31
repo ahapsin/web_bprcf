@@ -1,4 +1,3 @@
-import Image from "next/image";
 import IconLogo from "../icon/IconLogo";
 
 const Footer = () => {
@@ -27,12 +26,20 @@ const Footer = () => {
             </p>
           </div>
 
-          <nav aria-label="Footer Nav" className="mt-12 lg:mt-0 text-gray-400">
-            <p>terdaftar dan diawasi oleh: </p>
-            <div className="flex gap-4">
+          <nav
+            aria-label="Footer Nav"
+            className="mt-12 lg:mt-0 text-gray-400 text-right"
+          >
+            <p>
+              terdaftar dan diawasi oleh: <br />
+              <strong>
+                Otoritas Jasa Keuangan (OJK) & Lembaga Penjamin Simpanan (LPS)
+              </strong>
+            </p>
+            {/* <div className="flex gap-4">
               <Image src="/icon/ojk.png" width={120} height={60} alt="ojk" />
               <Image src="/icon/lps.png" width={100} height={100} alt="lps" />
-            </div>
+            </div> */}
           </nav>
         </div>
 

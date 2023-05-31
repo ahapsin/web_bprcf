@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 type cardProps = {
   img?: string;
   title?: string;
@@ -7,9 +9,9 @@ type cardProps = {
 const Card = (props: cardProps) => {
   return (
     <a href="#" className="group relative block bg-black">
-      <img
+      <Image
         alt="Developer"
-        src={props.img}
+        src={`${props.img}`}
         className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
       />
 

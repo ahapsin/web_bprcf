@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const BLOG_URL = "http://192.168.1.44:3001";
 const CONTENT_API_KEY = "065c160e2b7a6847d9c794a304";
 
@@ -19,8 +21,11 @@ export default async function Page() {
   return (
     <div className="flex p-5 gap-5">
       {data.posts.map((post: any) => (
-        <article className="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
-          <img
+        <article
+          className="overflow-hidden rounded-lg shadow transition hover:shadow-lg"
+          key={post.id}
+        >
+          <Image
             alt="Office"
             src={
               post.feature_image ??

@@ -80,7 +80,7 @@ const MainNavbar = () => {
               description="Suku Bunga Tinggi"
               icon={<IconPigMoney />}
             >
-              Tabungan
+              <Link href="/produk/tabungan">Tabungan</Link>
             </Dropdown.Item>
             <Dropdown.Item
               key="deposito"
@@ -88,7 +88,7 @@ const MainNavbar = () => {
               description="Investasi Terbaik"
               icon={<IconBusinessplan />}
             >
-              Deposito
+              <Link href="/produk/deposito">Deposito</Link>
             </Dropdown.Item>
             <Dropdown.Item
               key="kredit"
@@ -96,60 +96,12 @@ const MainNavbar = () => {
               description="Bunga Kompetitif"
               icon={<IconBuildingBank />}
             >
-              Kredit
+              <Link href="/produk/kredit">Kredit</Link>
             </Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
         <Navbar.Link href="/blog">Berita</Navbar.Link>
-        <Dropdown isBordered>
-          <Navbar.Item>
-            <Dropdown.Button
-              auto
-              light
-              css={{
-                px: 0,
-                dflex: "center",
-                svg: { pe: "none" },
-              }}
-              ripple={false}
-            >
-              Tentang Kami
-            </Dropdown.Button>
-          </Navbar.Item>
-          <Dropdown.Menu
-            aria-label="ACME features"
-            css={{
-              $$dropdownMenuWidth: "340px",
-              $$dropdownItemHeight: "32px",
-              "& .nextui-dropdown-item": {
-                py: "$4",
-                // dropdown item left icon
-                svg: {
-                  color: "$primary",
-                  mr: "$4",
-                },
-                // dropdown item title
-                "& .nextui-dropdown-item-content": {
-                  w: "100%",
-                },
-              },
-            }}
-          >
-            <Dropdown.Item key="tabungan">
-              <Link href="/about/#visi-misi">Visi Misi</Link>
-            </Dropdown.Item>
-
-            <Dropdown.Item key="struktur">
-              <Link href="about/#struktur">Struktur</Link>
-            </Dropdown.Item>
-            <Dropdown.Item key="laporan">
-              <Link href="about/#laporan">Laporan</Link>
-            </Dropdown.Item>
-            <Dropdown.Item key="medsos">
-              <Link href="about/#visi-misi">Media Sosial</Link>
-            </Dropdown.Item>
-          </Dropdown.Menu>
-        </Dropdown>
+        <Navbar.Link href="/about">Tentang Kami</Navbar.Link>
       </Navbar.Content>
       <Navbar.Content>
         <Navbar.Link color="inherit" href="#">
@@ -165,43 +117,19 @@ const MainNavbar = () => {
                 }}
                 ripple={false}
               >
-                <IconDotsVertical />
+                more
               </Dropdown.Button>
             </Navbar.Item>
-            <Dropdown.Menu
-              aria-label="ACME features"
-              css={{
-                $$dropdownMenuWidth: "340px",
-                $$dropdownItemHeight: "32px",
-                "& .nextui-dropdown-item": {
-                  py: "$4",
-                  // dropdown item left icon
-                  svg: {
-                    color: "$primary",
-                    mr: "$4",
-                  },
-                  // dropdown item title
-                  "& .nextui-dropdown-item-content": {
-                    w: "100%",
-                  },
-                },
-              }}
-            >
+            <Dropdown.Menu aria-label="ACME features">
               <Dropdown.Item key="wbs">
                 <Link href="/wbs">WBS</Link>
               </Dropdown.Item>
               <Dropdown.Item key="pengajuan_kredit">
-                Pengajuan Kredit
+                <Link href="/submission">Pengajuan Kredit</Link>
               </Dropdown.Item>
               <Dropdown.Item key="karir">Karir</Dropdown.Item>
               <Dropdown.Item key="login">
-                <Link
-                  href="https://bprcahayafajar.co.id"
-                  isExternal
-                  target="blank"
-                >
-                  login
-                </Link>
+                <Link href="/portal">login</Link>
               </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>

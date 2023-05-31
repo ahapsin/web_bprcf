@@ -89,7 +89,7 @@ const VisiMisi = () => {
               </h1>
               <div className="block rounded-xl border p-2 gap-2 shadow-sm border-gray-200">
                 {misions.map((item, index) => (
-                  <div className="flex gap-2 py-2">
+                  <div className="flex gap-2 py-2" key={index}>
                     <IconCircleCheck color="green" />
                     <p className="sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
                       {item}

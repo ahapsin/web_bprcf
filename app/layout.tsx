@@ -1,16 +1,8 @@
-import { Box } from "./Box";
-import { Content } from "./Content";
-import Card from "./components/card";
-import Announcement from "./components/announcement";
-import Cta from "./components/cta";
-import Footer from "./components/footer";
-import Section from "./components/section";
-import Testimoni from "./components/testimoni";
-import "./globals.css";
 import { Inter } from "next/font/google";
-import CardBlog from "./components/card/cardblog";
-import Title from "./components/title";
+import { Box } from "./Box";
+import Footer from "./components/footer";
 import MainNavbar from "./components/mainnavbar";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 

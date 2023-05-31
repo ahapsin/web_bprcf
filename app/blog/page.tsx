@@ -20,7 +20,10 @@ export default async function Page() {
   return (
     <div className="flex p-5 gap-5">
       {data.posts.map((post: any) => (
-        <article className="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+        <article
+          className="overflow-hidden rounded-lg shadow transition hover:shadow-lg"
+          key={post.id}
+        >
           <img
             alt="Office"
             src={
