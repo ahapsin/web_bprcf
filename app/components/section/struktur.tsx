@@ -1,12 +1,37 @@
-import { Image } from "@nextui-org/react";
+import Card from "../card";
 
+const list = [
+  {
+    title: "nama orang",
+    img: "/potrait/5.jpg",
+  },
+  {
+    title: "nama",
+    img: "/potrait/4.jpg",
+  },
+  {
+    title: "nama",
+    img: "/potrait/3.jpg",
+  },
+  {
+    title: "nama",
+    img: "/potrait/1.jpg",
+  },
+  {
+    title: "nama",
+    img: "/potrait/2.jpg",
+  },
+  {
+    title: "nama",
+    img: "/potrait/6.jpg",
+  },
+];
 const StrukturOrg = () => {
   return (
-    <div className="p-0">
-      <Image
-        src="https://asset.kompas.com/crops/Ogsj75GJrD5tXXfaIY2IDHELAMU=/0x0:3000x2000/750x500/data/photo/2022/01/16/61e38bac66cf7.jpg"
-        alt="struktur organisnisasi"
-      />
+    <div className="grid grid-cols-1 md:grid-cols-6 gap-3 p-5">
+      {list.map((item, index) => (
+        <Card key={index} img={item.img} desc={item.title} />
+      ))}
     </div>
   );
 };

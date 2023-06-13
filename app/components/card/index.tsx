@@ -12,6 +12,8 @@ const Card = (props: cardProps) => {
       <Image
         alt="Developer"
         src={`${props.img}`}
+        width={2250}
+        height={1390}
         className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
       />
 

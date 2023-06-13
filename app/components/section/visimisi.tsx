@@ -101,7 +101,7 @@ const VisiMisi = () => {
           </div>
         </div>
       </section>
-      <Title heading="Struktur" subtitle="struktur organisasi perusahaan" />
+      <Title heading="Dewan Komisaris" subtitle="PT. BPR Cahaya Fajar" />
       <StrukturOrg />
       <SingleSec />
     </>

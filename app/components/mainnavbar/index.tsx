@@ -1,5 +1,5 @@
 "use client";
-import { Dropdown, Navbar, Link, Text, useTheme } from "@nextui-org/react";
+import { Dropdown, Navbar, Text, useTheme } from "@nextui-org/react";
 import {
   IconBuildingBank,
   IconBusinessplan,
@@ -7,6 +7,7 @@ import {
   IconPigMoney,
 } from "@tabler/icons-react";
 import IconLogo from "../icon/IconLogo";
+import Link from "next/link";
 const MainNavbar = () => {
   const collapseItems = [
     "Beranda",
@@ -104,41 +105,36 @@ const MainNavbar = () => {
         <Navbar.Link href="/about">Tentang Kami</Navbar.Link>
       </Navbar.Content>
       <Navbar.Content>
-        <Navbar.Link color="inherit" href="#">
-          <Dropdown isBordered>
-            <Navbar.Item>
-              <Dropdown.Button
-                auto
-                light
-                css={{
-                  px: 0,
-                  dflex: "center",
-                  svg: { pe: "none" },
-                }}
-                ripple={false}
-              >
-                more
-              </Dropdown.Button>
-            </Navbar.Item>
-            <Dropdown.Menu aria-label="ACME features">
-              <Dropdown.Item key="wbs">
-                <Link href="/wbs">WBS</Link>
-              </Dropdown.Item>
-              <Dropdown.Item key="pengajuan_kredit">
-                <Link href="/submission">Pengajuan Kredit</Link>
-              </Dropdown.Item>
-              <Dropdown.Item key="karir">Karir</Dropdown.Item>
-              <Dropdown.Item key="login">
-                <Link href="/portal">login</Link>
-              </Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
-        </Navbar.Link>
-        {/* <Navbar.Item>
-          <Button auto flat as={Link} href="#">
-            Sign Up
-          </Button>
-        </Navbar.Item> */}
+        <Dropdown isBordered>
+          <Navbar.Item>
+            <Dropdown.Button
+              auto
+              light
+              css={{
+                px: 0,
+                dflex: "center",
+                svg: { pe: "none" },
+              }}
+              ripple={false}
+            >
+              more
+            </Dropdown.Button>
+          </Navbar.Item>
+          <Dropdown.Menu aria-label="ACME features">
+            <Dropdown.Item key="wbs">
+              <Link href="/wbs">WBS</Link>
+            </Dropdown.Item>
+            <Dropdown.Item key="pengajuan_kredit">
+              <Link href="/submission">Pengajuan Kredit</Link>
+            </Dropdown.Item>
+            <Dropdown.Item key="karir">Karir</Dropdown.Item>
+            <Dropdown.Item key="login">
+              <Link href="http://bprcahayafajar.co.id:82/bprcf/" passHref>
+                login
+              </Link>
+            </Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
       </Navbar.Content>
       <Navbar.Collapse>
         {collapseItems.map((item, index) => (

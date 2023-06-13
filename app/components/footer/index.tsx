@@ -17,12 +17,10 @@ const Footer = () => {
 
             <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500 lg:text-left">
               <strong>Kantor Pusat</strong>
-              <p>Jl. Karanggetas No. 142 Cirebon</p>
-              <p>
-                Telp : 0231 - 248400 <br />
-                Email: bprcahayafajar@yahoo.com <br />
-                Fax: 0231 - 204520
-              </p>
+              <br />
+              Jl. Karanggetas No. 142 Cirebon Telp : 0231 - 248400 <br />
+              Email: bprcahayafajar@yahoo.com <br />
+              Fax: 0231 - 204520
             </p>
           </div>
 
