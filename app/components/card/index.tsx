@@ -5,10 +5,11 @@ type cardProps = {
   title?: string;
   subtitle?: string;
   desc?: string;
+  className?: string;
 };
 const Card = (props: cardProps) => {
   return (
-    <a href="#" className="group relative block bg-black">
+    <a href="#" className={`${props.className} group relative block bg-black`}>
       <Image
         alt="Developer"
         src={`${props.img}`}
@@ -17,7 +18,7 @@ const Card = (props: cardProps) => {
         className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
       />
 
-      <div className="relative p-4 sm:p-6 lg:p-8">
+      <div className="relative p-4 sm:p-6 lg:p-8 h-[32rem] md:h-full">
         <p className="text-sm font-medium uppercase tracking-widest text-yellow-500">
           {props.subtitle}
         </p>
