@@ -6,29 +6,35 @@ import IconLogo from "../icon/IconLogo";
 import {
   IconBuildingBank,
   IconBusinessplan,
+  IconDots,
+  IconDotsVertical,
   IconPigMoney,
 } from "@tabler/icons-react";
 
 const MainNavbar = () => {
   const collapseItems = [
-    "Features",
-    "Customers",
-    "Pricing",
-    "Company",
-    "Legal",
-    "Team",
-    "Help & Feedback",
+    "Beranda",
+    "Tabungan",
+    "Deposito",
+    "Kredit",
+    "Berita",
+    "Tentang Kami",
+    "WBS",
+    "Karir",
     "Login",
-    "Sign Up",
   ];
   return (
     <Navbar shouldHideOnScroll>
       <Navbar.Brand>
-        <Navbar.Toggle aria-label="toggle navigation" showIn={"xs"} />
-        <IconLogo width={32} />
+        <Navbar.Toggle
+          aria-label="toggle navigation"
+          showIn={"xs"}
+          className="p-2"
+        />
+        <IconLogo width={32} classname="p-1" />
         <strong className="text-sky-900 ps-2">PT. BPR CAHAYA FAJAR</strong>
       </Navbar.Brand>
-      <Navbar.Content>
+      <Navbar.Content hideIn="xs">
         <Navbar.Item key={"beranda"}>
           <Link href={"/"}> Beranda</Link>
         </Navbar.Item>
@@ -102,18 +108,11 @@ const MainNavbar = () => {
       <Navbar.Content>
         <Dropdown isBordered>
           <Navbar.Item>
-            <Dropdown.Button
-              auto
-              light
-              css={{
-                px: 0,
-                dflex: "center",
-                svg: { pe: "none" },
-              }}
-              ripple={false}
-            >
-              more
-            </Dropdown.Button>
+            <Dropdown.Trigger>
+              <span className="p-2 hover:bg-slate-100 rounded-lg">
+                <IconDotsVertical />
+              </span>
+            </Dropdown.Trigger>
           </Navbar.Item>
           <Dropdown.Menu aria-label="ACME features">
             <Dropdown.Item key="wbs">
@@ -125,7 +124,7 @@ const MainNavbar = () => {
             <Dropdown.Item key="karir">Karir</Dropdown.Item>
             <Dropdown.Item key="login">
               <Link href="http://bprcahayafajar.co.id:82/bprcf/" passHref>
-                login
+                Login
               </Link>
             </Dropdown.Item>
           </Dropdown.Menu>

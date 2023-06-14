@@ -2,28 +2,32 @@ import Card from "../card";
 
 const list = [
   {
-    title: "nama orang",
-    img: "/potrait/5.jpg",
+    title: "WIDODO",
+    jabatan: "DEWAN KOMISARIS",
+    img: "/potrait/6.jpg",
   },
   {
-    title: "nama",
+    title: "SOEGENG NOTODIHARDJO",
+    jabatan: "KOMISARIS",
     img: "/potrait/4.jpg",
   },
   {
-    title: "nama",
-    img: "/potrait/3.jpg",
+    title: "SOENARYO HALIM",
+    jabatan: "KOMISARIS",
+    img: "/potrait/5.jpg",
   },
   {
-    title: "nama",
-    img: "/potrait/1.jpg",
-  },
-  {
-    title: "nama",
+    title: "ROBBY SANTOSO",
+    jabatan: "DIREKSI",
     img: "/potrait/2.jpg",
   },
   {
-    title: "nama",
-    img: "/potrait/6.jpg",
+    title: "GUNADI",
+    img: "/potrait/1.jpg",
+  },
+  {
+    title: "FEBY FERNADY MASURA",
+    img: "/potrait/3.jpg",
   },
 ];
 const StrukturOrg = () => {

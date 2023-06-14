@@ -63,10 +63,14 @@ const Icon = () => {
 type iconProps = {
   height?: number;
   width?: number;
+  classname?: string;
 };
 const IconLogo = (props: iconProps) => {
   return (
-    <div style={{ height: props.height, width: props.width }} className="size">
+    <div
+      style={{ height: props.height, width: props.width }}
+      className={props.classname}
+    >
       <Icon />
     </div>
   );

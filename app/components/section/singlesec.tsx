@@ -11,7 +11,7 @@ const SingleSec = () => {
 
       <a
         className="inline-flex items-center gap-2 rounded-full border border-white bg-white px-8 py-3 text-blue-600 hover:shadow-xl hover:text-blue focus:outline-none focus:ring active:bg-white/90"
-        href="/"
+        href="https://23323a0c-af8f-46fb-99a1-025b17a6996a.filesusr.com/ugd/787feb_b1f59bad8b524bf3862d327a9acb6cbc.pdf"
       >
         <span className="text-sm font-medium"> Lihat </span>
         {<IconArrowRight />}
