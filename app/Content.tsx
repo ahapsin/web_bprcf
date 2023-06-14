@@ -1,5 +1,4 @@
 "use client";
-import { NextUIProvider } from "@nextui-org/react";
 import { Box } from "./Box";
 import Card from "./components/card";
 import Hero from "./components/hero";
@@ -8,8 +7,7 @@ import Testimoni from "./components/testimoni";
 import Title from "./components/title";
 const text = "Almost before we knew it, we had left the ground.";
 export const Content = () => (
-  <NextUIProvider>
-    {" "}
+  <>
     <Hero />
     <Box>
       <Section />
@@ -39,5 +37,5 @@ export const Content = () => (
       </div>
       <Testimoni />
     </Box>
-  </NextUIProvider>
+  </>
 );

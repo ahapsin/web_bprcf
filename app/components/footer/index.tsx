@@ -8,7 +8,7 @@ const Footer = () => {
           <div>
             <div className="flex place items-center">
               <div className="p-2">
-                <IconLogo width="32px" />
+                <IconLogo width={32} />
               </div>
               <div className="p-2 flex items-center">
                 <strong>PT. BPR CAHAYA FAJAR </strong>

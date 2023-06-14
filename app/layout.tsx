@@ -1,5 +1,4 @@
 import { Inter } from "next/font/google";
-import { Box } from "./Box";
 import Footer from "./components/footer";
 import MainNavbar from "./components/mainnavbar";
 import "./globals.css";
@@ -19,16 +18,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {/* <Announcement /> */}
-        <Box
-          css={{
-            maxW: "100%",
-          }}
-        >
-          <MainNavbar />
-          {children}
-          <Footer />
-        </Box>
+        <MainNavbar />
+        {children}
+        <Footer />
       </body>
     </html>
   );

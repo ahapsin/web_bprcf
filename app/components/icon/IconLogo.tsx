@@ -61,8 +61,8 @@ const Icon = () => {
   );
 };
 type iconProps = {
-  height?: string;
-  width?: string;
+  height?: number;
+  width?: number;
 };
 const IconLogo = (props: iconProps) => {
   return (

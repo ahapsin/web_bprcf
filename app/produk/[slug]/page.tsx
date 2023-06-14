@@ -21,7 +21,7 @@ export default async function Page({ params }: { params: paramProps }) {
   return data.pages.map((page: any) => (
     <div className="flex p-5 gap-5" key={page.id}>
       <div>
-        <p dangerouslySetInnerHTML={{ __html: page.html }}></p>
+        <div dangerouslySetInnerHTML={{ __html: page.html }}></div>
       </div>
     </div>
   ));
