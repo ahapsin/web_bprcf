@@ -27,11 +27,10 @@ export default async function Page() {
         >
           <Image
             alt="Office"
-            src={
-              post.feature_image ??
-              "https://joadre.com/wp-content/uploads/2019/02/no-image.jpg"
-            }
+            src={"https://joadre.com/wp-content/uploads/2019/02/no-image.jpg"}
             className="h-56 w-full object-cover"
+            width={350}
+            height={350}
           />
           <div className="bg-white p-4 sm:p-6">
             <time dateTime="2022-10-10" className="block text-xs text-gray-500">

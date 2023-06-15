@@ -13,7 +13,27 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       daisyui: {
-        themes: ["light", "dark", "cupcake"],
+        themes: {
+          mytheme: {
+            primary: "#075985",
+
+            secondary: "#164e63",
+
+            accent: "#67cba0",
+
+            neutral: "#181a2a",
+
+            "base-100": "#ffffff",
+
+            info: "#3abff8",
+
+            success: "#36d399",
+
+            warning: "#fbbd23",
+
+            error: "#f87272",
+          },
+        },
       },
     },
   },

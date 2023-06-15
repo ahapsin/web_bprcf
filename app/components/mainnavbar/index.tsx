@@ -70,7 +70,7 @@ const MainNavbar = () => {
             </div>
           </Navbar.Item>
           <Navbar.Item key={"berita"}>
-            <Link href={"/produk/tabungan"} color={"text"}>
+            <Link href={"/blog"} color={"text"}>
               Berita
             </Link>
           </Navbar.Item>

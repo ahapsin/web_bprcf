@@ -2,7 +2,7 @@ type paramProps = {
   slug: string;
 };
 
-const BLOG_URL = "http://192.168.1.44:3001";
+const BLOG_URL = "http://bprcahayafajar.co.id:3001";
 const CONTENT_API_KEY = "065c160e2b7a6847d9c794a304";
 
 async function getPages(slug: string) {
