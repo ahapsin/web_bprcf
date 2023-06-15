@@ -33,10 +33,17 @@ const MainNavbar = () => {
     <>
       <Navbar shouldHideOnScroll variant="sticky">
         <Navbar.Brand>
-          <Navbar.Toggle aria-label="toggle navigation" showIn={"xs"} />
+          <Navbar.Toggle
+            aria-label="toggle navigation"
+            showIn={"xs"}
+            className="me-3"
+          />
           <IconLogo width={25} />
+          <Text>
+            <strong className="text-sky-900 ps-4">PT. BPR CAHAYA FAJAR</strong>
+          </Text>
         </Navbar.Brand>
-        <Navbar.Content>
+        <Navbar.Content hideIn={"xs"}>
           <Navbar.Item key={"beranda"}>
             <Link href={"/"} color={"text"}>
               Beranda
