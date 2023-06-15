@@ -17,7 +17,7 @@ const MainNavbar = () => {
     { title: "Permohonan Kredit", link: "/submission" },
     { title: "WBS", link: "/wbs" },
     { title: "Karir", link: "/karir" },
-    { title: "Login", link: "http://bprcahayafajar.co.id:82/bprcf" },
+    { title: "Login", link: "http://8a73085df21a.sn.mynetname.net:82/bprcf" },
   ];
   const collapseItems = [
     { title: "Beranda", link: "/" },
